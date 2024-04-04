@@ -233,7 +233,7 @@ export default function Match(props) {
         <div className="match">
         <div className="team">
                 <img className='visitorImage' src={visitor_team_image} />
-                <div className="teamName">{visitor_team}</div>
+                <div className="teamNameMatch">{visitor_team}</div>
             </div>
             <div className="detail">
             <div className="score">{visitor_team_score}</div>
@@ -243,7 +243,7 @@ export default function Match(props) {
             </div>
             <div className="team">
                 <img className='homeImage' src={home_team_image} />
-                <div className="teamName">{home_team}</div>
+                <div className="teamNameMatch">{home_team}</div>
             </div>
         </div>
     </div>
