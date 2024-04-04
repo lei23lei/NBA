@@ -1,0 +1,9 @@
+#header{
+    background-color: rgb(0, 0, 0);
+    height: 80px;
+}
+#header-logo{
+    float: left;
+    width: 100px;
+    margin: 10px;
+}

@@ -1,0 +1,17 @@
+#switchButton{
+    margin-top: 10px;
+    margin-left: 20px;
+    margin-bottom: 10px;
+}
+.loading{
+    display: flex;
+    justify-content: center;
+    height: 100vh;
+}
+#matchDetailContainer{
+    background-color: black;
+    padding-top: 10px;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center; 
+}

@@ -1,0 +1,21 @@
+
+.ant-table-container{
+    width: auto !important;
+    overflow: auto  !important;
+    height: auto        !important;
+}
+.ant-table-wrapper{
+    margin: 30px;
+    height: auto;
+    margin-bottom: 0px;
+    margin-top:0px;
+}
+
+.ant-table-pagination{
+    display: none !important;
+}
+#scoreBox{
+    height: auto;
+    padding-bottom: 20px;
+    border-radius: 30px;
+}

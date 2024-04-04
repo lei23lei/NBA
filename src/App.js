@@ -1,25 +1,22 @@
-import logo from './logo.svg';
-import './App.css';
+import React from 'react'
+import { configureStore } from '@reduxjs/toolkit';
+import { Provider } from 'react-redux';
+import homeImageReducer from './store/homeimageSlice.js';
+import Header from './components/header/Header'
+import Main from './components/main/Main'
 
-function App() {
+const store = configureStore({
+  reducer: {
+    homeImage: homeImageReducer,
+  },
+
+});
+
+export default function App() {
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
+    <Provider store={store}>
+        <Header/>
+        <Main/>
+    </Provider>
+  )
 }
-
-export default App;
