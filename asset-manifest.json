@@ -1,0 +1,43 @@
+{
+  "files": {
+    "main.css": "/NBA/static/css/main.d9a64522.css",
+    "main.js": "/NBA/static/js/main.88165b17.js",
+    "static/media/Celtics.svg": "/NBA/static/media/Celtics.bd49747274d24e4819f4b215cb867701.svg",
+    "static/media/Pelicans.svg": "/NBA/static/media/Pelicans.cafb0fe65b3c30cd0843a509f4c6f735.svg",
+    "static/media/Lakers.svg": "/NBA/static/media/Lakers.9cdbb84cb8ed8b4a80b0b7e389fb2774.svg",
+    "static/media/Mavericks.svg": "/NBA/static/media/Mavericks.638c43143b32f3093425f3385f0a1a61.svg",
+    "static/media/Raptors.svg": "/NBA/static/media/Raptors.213407cfbfb553552614771ce3169ba7.svg",
+    "static/media/Hornets.svg": "/NBA/static/media/Hornets.d3abc90d1bcbf7f403139058ae7335c7.svg",
+    "static/media/Thunder.svg": "/NBA/static/media/Thunder.453ef2aa3e9868e561f8996eb0fce966.svg",
+    "static/media/Bulls.svg": "/NBA/static/media/Bulls.04e0eb04b01f16a46bc6d36241d94b51.svg",
+    "static/media/Magic.svg": "/NBA/static/media/Magic.057ddbef2fcf85fdfaeb42766f0a0ee6.svg",
+    "static/media/Knicks.svg": "/NBA/static/media/Knicks.b471192fe9bded86f0142f8a58bfe228.svg",
+    "static/media/Nets.svg": "/NBA/static/media/Nets.213ecd3378e880678c9c6a97dcdcf864.svg",
+    "static/media/Heat.svg": "/NBA/static/media/Heat.ff9be1a6a992ef0fa2302427004711d2.svg",
+    "static/media/Pistons.svg": "/NBA/static/media/Pistons.600007d5dd473c3ee7f5f1802d66cef2.svg",
+    "static/media/Bucks.svg": "/NBA/static/media/Bucks.e63fdfe38cd1460d82515f5834745e88.svg",
+    "static/media/Timberwolves.svg": "/NBA/static/media/Timberwolves.05cf0b6416f1d7c0c1a5f89e21b42c17.svg",
+    "static/media/Kings.svg": "/NBA/static/media/Kings.05f426e5e8969b1d93e153fe9ae1081c.svg",
+    "static/media/76ers.svg": "/NBA/static/media/76ers.77598b6c90797ebedcf3d1a12abddcd8.svg",
+    "static/media/Grizzlies.svg": "/NBA/static/media/Grizzlies.a92cc898e9f7d6d2418fb5e698cdfc63.svg",
+    "static/media/Warriors.svg": "/NBA/static/media/Warriors.5ed3f8d509ada4866af9abce7ec8f26a.svg",
+    "static/media/Wizards.svg": "/NBA/static/media/Wizards.d1accb86ac6dd8c6a3c1bdbff6caafae.svg",
+    "static/media/Rockets.svg": "/NBA/static/media/Rockets.ca6c9b3513704e64e8566836b7ce3778.svg",
+    "static/media/Nuggets.svg": "/NBA/static/media/Nuggets.46c3bc569b6d4e19348db42591dbe549.svg",
+    "static/media/Pacers.svg": "/NBA/static/media/Pacers.ff18f06099fb91beeb906f1edd3d8ae9.svg",
+    "static/media/Suns.svg": "/NBA/static/media/Suns.01d78c628f1c0bf0dc63f5854482afc2.svg",
+    "static/media/Trail.svg": "/NBA/static/media/Trail.4b262d67690a4b935188ad67e65d1ef2.svg",
+    "static/media/Spurs.svg": "/NBA/static/media/Spurs.b496c6d27762bf40dd0bc7e2bcfa2e45.svg",
+    "static/media/Hawks.svg": "/NBA/static/media/Hawks.bb9676f0b9f16c8c173ae2d8f67c9dfe.svg",
+    "static/media/Clippers.svg": "/NBA/static/media/Clippers.e5812b790d7e2c4746bb26b195ca6680.svg",
+    "static/media/Jazz.svg": "/NBA/static/media/Jazz.e7681b1548e188dfdc5abb5c8ac7b16d.svg",
+    "static/media/Cavaliers.svg": "/NBA/static/media/Cavaliers.7f0c1a9ea74b747e8a6f89f1c5bc9230.svg",
+    "index.html": "/NBA/index.html",
+    "main.d9a64522.css.map": "/NBA/static/css/main.d9a64522.css.map",
+    "main.88165b17.js.map": "/NBA/static/js/main.88165b17.js.map"
+  },
+  "entrypoints": [
+    "static/css/main.d9a64522.css",
+    "static/js/main.88165b17.js"
+  ]
+}
