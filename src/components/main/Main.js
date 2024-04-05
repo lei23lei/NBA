@@ -11,16 +11,16 @@ export default function Main() {
     <div>
         <nav>
             <ul id="nav">
-            <Link to="/NBA/games" className="category" variant="dark">Games</Link>{' '}
-            <Link to="/NBA/standing" className="category" variant="dark">Standings</Link>{' '}
+            <Link to="/games" className="category" variant="dark">Games</Link>{' '}
+            <Link to="/standing" className="category" variant="dark">Standings</Link>{' '}
             <Button className="category" variant="dark">Teams</Button>{' '}
             </ul>
         </nav>
         <div id="main">
             <Routes>
-                <Route path="/NBA/standing" element={<Standing />} />
-                <Route path="/NBA/games/:id" element={<MatchDetail />} />
-                <Route path="/NBA/*" element={<Game />} />
+                <Route path="/standing" element={<Standing />} />
+                <Route path="/games/:id" element={<MatchDetail />} />
+                <Route path="/*" element={<Game />} />
 
             </Routes>
         </div>

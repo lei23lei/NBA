@@ -75,7 +75,7 @@ export default function Games() {
         <div id="games">
             {matches.map((match) => (
                 match.status.substring(0,2) === "20" ? <Match match={match} key={match.id}/>:
-                <Link style={{textDecoration:'none'}} to={`NBA/games/${match.id}`} key={match.id}>
+                <Link style={{textDecoration:'none'}} to={`/games/${match.id}`} key={match.id}>
                     <Match match={match} />
                 </Link>
             ))}
