@@ -1,0 +1,13 @@
+
+#teamsPage{
+}
+#teamContainer{
+    background-color: rgb(37, 37, 37);
+}
+#insideContainer{
+    padding:40px;
+    display: flex;
+    border-radius: 15px;
+    flex-wrap: wrap;
+    justify-content: space-around;
+}

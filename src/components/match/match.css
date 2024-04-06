@@ -4,6 +4,9 @@
 .visitorImage{
     width: 110px;
 }
+#main{
+    background-color:rgb(37, 37, 37);
+}
 .match{
     display: flex;
     border: solid 7px rgb(37, 37, 37);

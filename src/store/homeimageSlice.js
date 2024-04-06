@@ -30,9 +30,11 @@ import imageTrailBlazers from "../nba-images/Trail.svg";
 import imageWarriors from "../nba-images/Warriors.svg";
 import imageWizards from "../nba-images/Wizards.svg";
 
-const initialState = {
-    homeImage: null,
-};
+const initialState = 
+    [
+
+    ];
+
 // get the team name parameter and set the image accordingly
 const homeImageSlice = createSlice({
     name: 'homeImage',
