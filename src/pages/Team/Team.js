@@ -7,12 +7,10 @@ export default function Team(props) {
 
   const mouseEnter = () => {
     setMouseIn(true);
-    console.log("mouseIn", mouseIn);
   };
 
   const mouseLeave = () => {
     setMouseIn(false);
-    console.log("mouseIn", mouseIn);
   };
 
   return (
