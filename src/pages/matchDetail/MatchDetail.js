@@ -6,6 +6,7 @@ import Button from 'react-bootstrap/Button';
 import {useNavigate} from 'react-router-dom';
 import axios from 'axios';
 import Spinner from 'react-bootstrap/Spinner';
+import RollbackOutlined from '@ant-design/icons/RollbackOutlined';
 import "./matchDetail.css";
 
 
@@ -91,7 +92,7 @@ export default function MatchDetail() {
         <div id="switchButton">
             <Button onClick={showVistor} style={{backgroundColor:isVisitor?"white":"grey", color:isVisitor?"black":"white"}} variant="secondary">{visitorName}</Button>{' '}
             <Button onClick={showHome} style={{backgroundColor:isHome?"white":"grey", color:isHome?"black":"white"}} variant="secondary">{homeName}</Button>{' '}
-            <Button onClick={goBack} style={{float:'right', marginRight:'35px'}} variant="secondary">Go Back</Button>{' '}
+            <Button onClick={goBack} style={{float:'right', marginRight:'35px',width:'45px'}} variant="secondary"><RollbackOutlined /></Button>{' '}
         </div>
         <div className="boxScore">
             {isHome&&<BoxScore data={home} />}

@@ -1,4 +1,3 @@
-import {createSlice} from '@reduxjs/toolkit';
 import image76ers from "../nba-images/76ers.svg";
 import imageBucks from "../nba-images/Bucks.svg";
 import imageBulls from "../nba-images/Bulls.svg";
@@ -30,54 +29,47 @@ import imageTrailBlazers from "../nba-images/Trail.svg";
 import imageWarriors from "../nba-images/Warriors.svg";
 import imageWizards from "../nba-images/Wizards.svg";
 
-const initialState = 
-    [
+import { createSlice } from '@reduxjs/toolkit';
 
-    ];
+const initialState = [
+    { id: 1, name: 'Hawks', image: imageHawks },
+    { id: 2, name: 'Celtics', image: imageCeltics },
+    { id: 3, name: 'Nets', image: imageNets },
+    { id: 4, name: 'Hornets', image: imageHornets },
+    { id: 5, name: 'Bulls', image: imageBulls },
+    { id: 6, name: 'Cavaliers', image: imageCavaliers },
+    { id: 7, name: 'Mavericks', image: imageMavericks },
+    { id: 8, name: 'Nuggets', image: imageNuggets },
+    { id: 9, name: 'Pistons', image: imagePistons },
+    { id: 10, name: 'Warriors', image: imageWarriors },
+    { id: 11, name: 'Rockets', image: imageRockets },
+    { id: 12, name: 'Pacers', image: imagePacers },
+    { id: 13, name: 'Clippers', image: imageClippers },
+    { id: 14, name: 'Lakers', image: imageLakers },
+    { id: 15, name: 'Grizzlies', image: imageGrizzlies },
+    { id: 16, name: 'Heat', image: imageHeat },
+    { id: 17, name: 'Bucks', image: imageBucks },
+    { id: 18, name: 'Timberwolves', image: imageTimberwolves },
+    { id: 19, name: 'Pelicans', image: imagePelicans },
+    { id: 20, name: 'Knicks', image: imageKnicks },
+    { id: 21, name: 'Thunder', image: imageThunder },
+    { id: 22, name: 'Magic', image: imageMagic },
+    { id: 23, name: '76ers', image: image76ers },
+    { id: 24, name: 'Suns', image: imageSuns },
+    { id: 25, name: 'Trail Blazers', image: imageTrailBlazers },
+    { id: 26, name: 'Kings', image: imageKings },
+    { id: 27, name: 'Spurs', image: imageSpurs },
+    { id: 28, name: 'Raptors', image: imageRaptors },
+    { id: 29, name: 'Jazz', image: imageJazz },
+    { id: 30, name: 'Wizards', image: imageWizards }
+];
 
-// get the team name parameter and set the image accordingly
+// Create the slice
 const homeImageSlice = createSlice({
-    name: 'homeImage',
+    name: 'teams',
     initialState,
-    reducers: {
-        setHomeImage: (state, action) => {
-            const imageMap = {
-                1: imageHawks,
-                2: imageCeltics,
-                3: imageNets,
-                4: imageHornets,
-                5: imageBulls,
-                6: imageCavaliers,
-                7: imageMavericks,
-                8: imageNuggets,
-                9: imagePistons,
-                10: imageWarriors,
-                11: imageRockets,
-                12: imagePacers,
-                13: imageClippers,
-                14: imageLakers,
-                15: imageGrizzlies,
-                16: imageHeat,
-                17: imageBucks,
-                18: imageTimberwolves,
-                19: imagePelicans,
-                20: imageKnicks,
-                21: imageThunder,
-                22: imageMagic,
-                23: image76ers,
-                24: imageSuns,
-                25: imageTrailBlazers,
-                26: imageKings,
-                27: imageSpurs,
-                28: imageRaptors,
-                29: imageJazz,
-                30: imageWizards,
-            };
-            state.homeImage = imageMap[action.payload] || null;
-        }
-    }
+    reducers: {}
 });
 
-//export
-export const {setHomeImage} = homeImageSlice.actions;
+// Export the reducer
 export default homeImageSlice.reducer;

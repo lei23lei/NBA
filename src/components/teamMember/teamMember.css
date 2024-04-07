@@ -1,0 +1,9 @@
+#teamButtonContainer {
+    display: flex; /* Use flexbox for layout */
+    justify-content: flex-end; /* Align items to the end (right) */
+}
+#teamButton{
+    margin-right:20px;
+    width: 45px;
+    margin-bottom:10px
+}

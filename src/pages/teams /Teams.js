@@ -30,6 +30,7 @@ import imageWarriors from "../../nba-images/Warriors.svg";
 import imageWizards from "../../nba-images/Wizards.svg";
 import "./teams.css";
 import React,{useState} from 'react'
+import { Link } from 'react-router-dom';
 import Team from "../Team/Team"
 
 export default function Teams() {

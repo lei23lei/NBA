@@ -4,6 +4,7 @@ import "./main.css"
 import MatchDetail from '../../pages/matchDetail/MatchDetail';
 import Teams from "../../pages/teams /Teams"
 import Button from 'react-bootstrap/Button';
+import TeamDetail from '../../pages/TeamDetail/TeamDetail'
 import Game from "../../pages/games/Games"
 import Standing from '../../pages/standing/Standing';
 
@@ -22,8 +23,8 @@ export default function Main() {
                 <Route path="/standing" element={<Standing />} />
                 <Route path="/games/:id" element={<MatchDetail />} />
                 <Route path="/teams" element={<Teams />} />
+                <Route path="/teams/:id" element={<TeamDetail />} />
                 <Route path="/*" element={<Game />} />
-
             </Routes>
         </div>
     </div>
