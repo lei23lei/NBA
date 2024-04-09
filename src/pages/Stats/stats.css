@@ -1,0 +1,25 @@
+#stats{
+    display: flex;  
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#statsTitle{
+    display: flex;
+    justify-content: center;
+    font-size: 40px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+    color:white;
+}
+#statsSelect{
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 20px;
+    width: 90%;
+}
+@media (max-width: 602px){
+    #statsTitle{
+        font-size: 1.5em;   
+    }
+}

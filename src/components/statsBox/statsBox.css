@@ -1,0 +1,8 @@
+#statsbox{
+    border: 1px solid black;
+    overflow: auto;
+    margin: 0px;
+    width: 90%;
+    color: white;
+    margin-bottom:30px
+}
