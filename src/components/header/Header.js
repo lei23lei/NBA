@@ -1,6 +1,7 @@
 import React, { useState,useRef,useMemo,useEffect  } from 'react';
 import logo1 from "../../nba-images/logo1.png";
 import { useNavigate } from 'react-router-dom';
+import { Switch } from 'antd';  
 
 
 import { CommentOutlined, CustomerServiceOutlined } from '@ant-design/icons';
@@ -10,6 +11,11 @@ import "./header.css";
 
 
 export default function Header(props) {
+  const {setIsHide} = props;
+  const onChangeSwitch = (checked) => {
+      console.log(`switch to ${checked}`);
+      setIsHide(checked);
+    };
   const negivate = useNavigate();
   const { setFeedback } = props;
   const { setGame } = props;
@@ -56,10 +62,13 @@ export default function Header(props) {
 
   };
 
-
   return (
     <div id="header">
       <img id="header-logo" onClick={showGame} src={logo1} alt="logo" />
+      <div id="hideContainer">
+      <Switch id="switchHide" checkedChildren="hide" unCheckedChildren="hide" onChange={onChangeSwitch} />
+      </div>
+      
       {/* <FloatButton
         
         icon={<CustomerServiceOutlined />}
@@ -74,7 +83,7 @@ export default function Header(props) {
       trigger="click"
       type="primary"
       style={{
-        right: 24,
+        right: 10,
       }}
       icon={<CustomerServiceOutlined />}
     >

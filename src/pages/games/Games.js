@@ -12,12 +12,9 @@ const apiKey = "cda42657-3f79-4c68-b698-755f3ed5e718";
 const url = "https://api.balldontlie.io/v1/games"
 
 
-export default function Games() {
-    const [isHide, setIsHide] = useState(false);
-    const onChangeSwitch = (checked) => {
-        console.log(`switch to ${checked}`);
-        setIsHide(checked);
-      };
+export default function Games(props) {
+    const {isHide} = props;
+    console.log("Game", isHide);
     const [size, setSize] = useState(window.innerWidth < 550 ? "small" : "default");
     const [date, setDate] = useState(moment().format('YYYY-MM-DD'));
     const [isLoading, setIsLoading] = useState(true);
@@ -64,7 +61,7 @@ export default function Games() {
   return (
     <div>   
         <div id='showDate'>
-            <h2>{date}</h2><div><Switch id="switch" checkedChildren="hide" unCheckedChildren="hide" onChange={onChangeSwitch} /></div>
+            <h2>{date}</h2>
         </div>
         <div id="datePanel"> 
         {/* if screen width is less than 550px, add size = "small" into Pagination */}

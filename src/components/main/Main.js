@@ -12,6 +12,8 @@ import Standing from '../../pages/standing/Standing';
 export default function Main(props) {
   const {game} = props;
   const {setGame} = props;
+  const {isHide} = props;
+  console.log("main",isHide);
   const [isGame, setIsGame] = useState(false);
   const [isStanding, setIsStanding] = useState(false);
   const [isStats, setIsStats] = useState(false);
@@ -68,7 +70,7 @@ export default function Main(props) {
                 <Route path="/teams" element={<Teams />} />
                 <Route path="/teams/:id" element={<TeamDetail />} />
                 <Route path="/feedback" element={<Feedback feedback={props.feedback} />} />
-                <Route path="/*" element={<Game />} />
+                <Route path="/*" element={<Game isHide={isHide} />} />
             </Routes>
         </div>
     </div>
