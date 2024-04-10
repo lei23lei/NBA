@@ -299,7 +299,16 @@ export default function Stats(props) {
   return (
     <div>
        {data.length===0 ?   <div id="standingLoading">
-        <h1 style={{color:'white', marginTop:'70px'}}>Loading <Spinner animation="border" variant="light" /></h1>
+       <div>
+        <h1 style={{color:'white', marginTop:'70px'}}>Loading</h1>
+
+            <div style={{display:"flex"}}>
+            <Spinner animation="grow" variant="primary" />
+            <Spinner animation="grow" variant="danger" />
+            <Spinner animation="grow" variant="light" />
+            <Spinner animation="grow" variant="dark" />
+            </div>
+        </div>
         </div>
     :
     <div id='stats'>

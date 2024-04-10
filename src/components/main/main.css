@@ -4,6 +4,7 @@
     align-items: center;    margin-bottom: 0px;
     background-color: #042670;
     padding-top: 3px;
+    text-decoration: none;
     padding-bottom: 3px;
     box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
     /* padding-left: 100px;
@@ -14,7 +15,12 @@
     font-style: normal;
     justify-content: space-around;
     align-items: center;
+    text-decoration: none;
     /*  white text shadow */
+}
+.categoryName{
+    font-size: 20px;
+    text-decoration: none;
 }
 #main{
     background-color: rgb(37, 37, 37);

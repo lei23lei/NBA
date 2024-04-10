@@ -15,10 +15,11 @@ const store = configureStore({
 
 export default function App() {
   const [feedback, setFeedback] = useState(null);
+  const [game, setGame] = useState(false);
   return (
     <Provider store={store}>
-        <Header setFeedback={setFeedback}/>
-        <Main feedback={feedback}/>
+        <Header setFeedback={setFeedback} setGame={setGame}/>
+        <Main feedback={feedback} game={game} setGame={setGame}/>
         <Footer/>
     </Provider>
   )

@@ -12,6 +12,7 @@ import "./header.css";
 export default function Header(props) {
   const negivate = useNavigate();
   const { setFeedback } = props;
+  const { setGame } = props;
   const [api, contextHolder] = notification.useNotification();
   const nameRef = useRef(null);
   const [name, setName] = useState('');
@@ -50,7 +51,9 @@ export default function Header(props) {
     negivate('/feedback');
   };
   const showGame = () => {
+    setGame(true);
     negivate('/');
+
   };
 
 

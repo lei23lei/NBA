@@ -1,7 +1,8 @@
 {
   "files": {
-    "main.css": "/NBA/static/css/main.e39c76de.css",
-    "main.js": "/NBA/static/js/main.f1c5074e.js",
+    "main.css": "/NBA/static/css/main.77b99620.css",
+    "main.js": "/NBA/static/js/main.011ffe0d.js",
+    "static/media/ig.png": "/NBA/static/media/ig.1d6d0317700c4f0c95b7.png",
     "static/media/Celtics.svg": "/NBA/static/media/Celtics.bd49747274d24e4819f4b215cb867701.svg",
     "static/media/Pelicans.svg": "/NBA/static/media/Pelicans.cafb0fe65b3c30cd0843a509f4c6f735.svg",
     "static/media/Lakers.svg": "/NBA/static/media/Lakers.9cdbb84cb8ed8b4a80b0b7e389fb2774.svg",
@@ -33,11 +34,11 @@
     "static/media/Jazz.svg": "/NBA/static/media/Jazz.e7681b1548e188dfdc5abb5c8ac7b16d.svg",
     "static/media/Cavaliers.svg": "/NBA/static/media/Cavaliers.7f0c1a9ea74b747e8a6f89f1c5bc9230.svg",
     "index.html": "/NBA/index.html",
-    "main.e39c76de.css.map": "/NBA/static/css/main.e39c76de.css.map",
-    "main.f1c5074e.js.map": "/NBA/static/js/main.f1c5074e.js.map"
+    "main.77b99620.css.map": "/NBA/static/css/main.77b99620.css.map",
+    "main.011ffe0d.js.map": "/NBA/static/js/main.011ffe0d.js.map"
   },
   "entrypoints": [
-    "static/css/main.e39c76de.css",
-    "static/js/main.f1c5074e.js"
+    "static/css/main.77b99620.css",
+    "static/js/main.011ffe0d.js"
   ]
 }
