@@ -11,7 +11,12 @@
 #showDate{
     display: flex;
     justify-content: center;
+    align-items: center;
     color: white    ;
+}
+#switch{
+    margin-left: 10px;
+    margin-bottom: 3px;
 }
 #games{
     display: flex;
@@ -29,6 +34,10 @@
     justify-content: center;
     font-size: 30px;
     margin-bottom: 0px;
+}
+#hidescore{
+    font-size: 25px;
+    margin-left: 10px;
 }
 @media screen and (max-width: 600px){
     /* #datePanel{

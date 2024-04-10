@@ -33,6 +33,7 @@ import imageWizards from "../../nba-images/Wizards.svg";
 
 
 export default function Match(props) {
+    const isHide = props.isHide;
     const {status,time,home_team_score,visitor_team_score} = props.match;
     var utcTime = new Date(status);
     var localTimeString = utcTime.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: true});
@@ -236,10 +237,12 @@ export default function Match(props) {
                 <div className="teamNameMatch">{visitor_team}</div>
             </div>
             <div className="detail">
-            <div className="score">{visitor_team_score}</div>
+            {isHide?<div className="score">-</div>:<div className="score">{visitor_team_score}</div>}
+
             {status.substring(0,2)==="20"?<div className="status">{localTimeString}</div>:
             <div className="time">{time}</div>}
-            <div className="score">{home_team_score}</div>
+            {isHide?<div className="score">-</div>:<div className="score">{home_team_score}</div>}
+            
             </div>
             <div className="team">
                 <img className='homeImage' src={home_team_image} />

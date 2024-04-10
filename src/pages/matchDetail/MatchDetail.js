@@ -20,7 +20,8 @@ export default function MatchDetail() {
     const [visitor,setVisitor] = useState([]);
     const [visitorName,setVisitorName] = useState([]); 
     const [isVisitor,setIsVisitor] = useState(false);
-    const {id} = useParams();
+    const {id,isHide} = useParams();
+    console.log("matchDetail",id,isHide);
     useEffect(() => {
         window.scrollTo(0, 0);
         var url = "https://api.balldontlie.io/v1/games/"
@@ -95,7 +96,7 @@ export default function MatchDetail() {
          </div>:
         <div>
         <div style={{ display: 'flex', justifyContent: 'center',width:'100%'}}>
-            <Match match={match} />
+            <Match match={match} isHide={isHide} />
         </div>
         <div id="switchButton">
             <Button onClick={showVistor} style={{backgroundColor:isVisitor?"white":"grey", color:isVisitor?"black":"white"}} variant="secondary">{visitorName}</Button>{' '}

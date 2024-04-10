@@ -63,7 +63,7 @@ export default function Main(props) {
         <div id="main">
             <Routes>
                 <Route path="/standing" element={<Standing />} />
-                <Route path="/games/:id" element={<MatchDetail />} />
+                <Route path="/games/:id/:isHide" element={<MatchDetail />} />
                 <Route path="/stats" element={<Stats/>} />
                 <Route path="/teams" element={<Teams />} />
                 <Route path="/teams/:id" element={<TeamDetail />} />

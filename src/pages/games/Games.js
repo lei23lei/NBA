@@ -2,6 +2,7 @@ import React,{useEffect, useState} from 'react'
 import { Pagination,DatePicker, Space } from 'antd';
 import {Link} from 'react-router-dom';
 import axios from 'axios';
+import { Switch } from 'antd';  
 import moment from 'moment';
 import "./games.css"
 import Spinner from 'react-bootstrap/Spinner';
@@ -12,6 +13,11 @@ const url = "https://api.balldontlie.io/v1/games"
 
 
 export default function Games() {
+    const [isHide, setIsHide] = useState(false);
+    const onChangeSwitch = (checked) => {
+        console.log(`switch to ${checked}`);
+        setIsHide(checked);
+      };
     const [size, setSize] = useState(window.innerWidth < 550 ? "small" : "default");
     const [date, setDate] = useState(moment().format('YYYY-MM-DD'));
     const [isLoading, setIsLoading] = useState(true);
@@ -58,7 +64,7 @@ export default function Games() {
   return (
     <div>   
         <div id='showDate'>
-            <h2>{date}</h2>
+            <h2>{date}</h2><div><Switch id="switch" checkedChildren="hide" unCheckedChildren="hide" onChange={onChangeSwitch} /></div>
         </div>
         <div id="datePanel"> 
         {/* if screen width is less than 550px, add size = "small" into Pagination */}
@@ -83,9 +89,9 @@ export default function Games() {
             <div id="noGame">No Scheduled Games or Events</div>) :
         <div id="games">
             {matches.map((match) => (
-                match.status.substring(0,2) === "20" ? <Match match={match} key={match.id}/>:
-                <Link style={{textDecoration:'none'}} to={`/games/${match.id}`} key={match.id}>
-                    <Match match={match} />
+                match.status.substring(0,2) === "20" ? <Match match={match} isHide={isHide} key={match.id}/>:
+                <Link style={{textDecoration:'none'}} to={`/games/${match.id}/${isHide}`} key={match.id}>
+                    <Match match={match} isHide={isHide}/>
                 </Link>
             ))}
         </div>
