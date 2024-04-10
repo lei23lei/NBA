@@ -10,7 +10,7 @@ import RollbackOutlined from '@ant-design/icons/RollbackOutlined';
 import "./matchDetail.css";
 
 
-export default function MatchDetail() {
+export default function MatchDetail(props) {
     const navigate = useNavigate();
     const apiKey = "cda42657-3f79-4c68-b698-755f3ed5e718";
     const [match, setMatch] = useState(null);
@@ -20,8 +20,8 @@ export default function MatchDetail() {
     const [visitor,setVisitor] = useState([]);
     const [visitorName,setVisitorName] = useState([]); 
     const [isVisitor,setIsVisitor] = useState(false);
-    const {id,isHide} = useParams();
-    console.log("matchDetail",id,isHide);
+    const {id} = useParams();
+    const {isHide} = props;
     useEffect(() => {
         window.scrollTo(0, 0);
         var url = "https://api.balldontlie.io/v1/games/"

@@ -34,6 +34,7 @@ import imageWizards from "../../nba-images/Wizards.svg";
 
 export default function Match(props) {
     const isHide = props.isHide;
+    console.log("match",isHide);
     const {status,time,home_team_score,visitor_team_score} = props.match;
     var utcTime = new Date(status);
     var localTimeString = utcTime.toLocaleTimeString([], {hour: '2-digit', minute:'2-digit', hour12: true});

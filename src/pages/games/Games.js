@@ -87,7 +87,7 @@ export default function Games(props) {
         <div id="games">
             {matches.map((match) => (
                 match.status.substring(0,2) === "20" ? <Match match={match} isHide={isHide} key={match.id}/>:
-                <Link style={{textDecoration:'none'}} to={`/games/${match.id}/${isHide}`} key={match.id}>
+                <Link style={{textDecoration:'none'}} to={`/games/${match.id}`} key={match.id}>
                     <Match match={match} isHide={isHide}/>
                 </Link>
             ))}
