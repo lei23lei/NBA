@@ -262,35 +262,30 @@ export default function Stats(props) {
       var newData = data.sort((a, b) => b.pts - a.pts)
       setData(newData);
       setIsChange(true);
-      console.log('dataChanged');
       setFilter('PTS');
     };
     const reb = ()=>{
       var newData = data.sort((a, b) => b.reb - a.reb)
       setData(newData);
       setIsChange(!isChange);
-      console.log('dataChanged');
       setFilter('REB');
     }
     const ast = ()=>{
       var newData = data.sort((a, b) => b.ast - a.ast)
       setData(newData);
       setIsChange(!isChange);
-      console.log('dataChanged');
       setFilter('AST');
     }
     const stl = ()=>{
       var newData = data.sort((a, b) => b.stl - a.stl)
       setData(newData);
       setIsChange(!isChange);
-      console.log('dataChanged');
       setFilter('STL');
     }
     const blk = ()=>{
       var newData = data.sort((a, b) => b.blk - a.blk)
       setData(newData);
       setIsChange(!isChange);
-      console.log('dataChanged');
       setFilter('BLK');
     }
     const goBack = () => {

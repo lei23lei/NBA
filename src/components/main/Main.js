@@ -13,7 +13,6 @@ export default function Main(props) {
   const {game} = props;
   const {setGame} = props;
   const {isHide} = props;
-  console.log("main",isHide);
   const [isGame, setIsGame] = useState(false);
   const [isStanding, setIsStanding] = useState(false);
   const [isStats, setIsStats] = useState(false);
@@ -45,7 +44,6 @@ export default function Main(props) {
   };
 
   useEffect(() => {
-    console.log("game",game);
     if(game){
       clickGame();
       setGame(false);

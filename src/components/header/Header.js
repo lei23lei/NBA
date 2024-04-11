@@ -5,7 +5,7 @@ import { Switch } from 'antd';
 
 
 import { CommentOutlined, CustomerServiceOutlined } from '@ant-design/icons';
-import { FloatButton, Drawer, Form, Input, Slider, Button,notification, Divider, Space } from 'antd';
+import { FloatButton, Drawer, Form, Input, Slider, Button,notification, } from 'antd';
 
 import "./header.css";
 
@@ -13,7 +13,6 @@ import "./header.css";
 export default function Header(props) {
   const {setIsHide} = props;
   const onChangeSwitch = (checked) => {
-      console.log(`switch to ${checked}`);
       setIsHide(checked);
     };
   const negivate = useNavigate();
@@ -47,7 +46,6 @@ export default function Header(props) {
     setOpen(false);
   };
   const onFinish = (values) => {
-    console.log('Received values:', values);
     setOpen(false);
     form.resetFields();
     openNotification(values.name);

@@ -13,7 +13,6 @@ export default function TeamDetail() {
   const url = `https://api.balldontlie.io/v1/teams/${id}`;
   const APIkey= "cda42657-3f79-4c68-b698-755f3ed5e718"
   const [image, setImage] = useState([]);
-  const [loading, setLoading] = useState(false);
   const images = useSelector((state) => state.homeImage);
   useEffect(() => {
     axios.get(url, {
@@ -31,7 +30,7 @@ export default function TeamDetail() {
   }, []);
   return (
     <div>
-        {loading ?   <div id="standingLoading">
+        {!team.city ?   <div id="standingLoading">
         <div>
         <h1 style={{color:'white', marginTop:'70px'}}>Loading</h1>
 
@@ -54,7 +53,7 @@ export default function TeamDetail() {
         </div>
       </div>
       <div className="teamMember">
-      <TeamMember setLoading={setLoading} id={id}/>
+      <TeamMember id={id}/>
       </div>
     </div>}
     </div>

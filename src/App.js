@@ -18,7 +18,6 @@ const store = configureStore({
 
 export default function App() {
   const [isHide,setIsHide] = useState();
-  console.log('app',isHide);
   const [feedback, setFeedback] = useState(null);
   const [game, setGame] = useState(false);
   return (

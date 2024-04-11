@@ -14,7 +14,6 @@ const url = "https://api.balldontlie.io/v1/games"
 
 export default function Games(props) {
     const {isHide} = props;
-    console.log("Game", isHide);
     const [size, setSize] = useState(window.innerWidth < 550 ? "small" : "default");
     const [date, setDate] = useState(moment().format('YYYY-MM-DD'));
     const [isLoading, setIsLoading] = useState(true);

@@ -8,7 +8,7 @@ import Table from 'react-bootstrap/Table';
 import axios from 'axios';
 export default function TeamMember(props) {
     const [player, setPlayer] = useState([]);
-    const {setLoading} = props;
+    // const {setLoading} = props;
     const id = props.id;
     const url = "https://api.balldontlie.io/v1/players";
     const APIkey= "cda42657-3f79-4c68-b698-755f3ed5e718";
@@ -23,7 +23,7 @@ export default function TeamMember(props) {
             }
         }).then(response => {
             setPlayer(response.data.data.filter(e => e.position !== ""));
-            setLoading(false);
+            // setLoading(false);
         }).catch(error => {
             console.log(error)
         });
@@ -42,7 +42,7 @@ export default function TeamMember(props) {
                 <tr >
                 <th>#</th>
                 <th>F_Name</th>
-                <th>L_ame</th>
+                <th>L_Name</th>
                 <th>position</th>
                 <th>height</th>
                 <th>weight</th>

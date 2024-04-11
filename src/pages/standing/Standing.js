@@ -43,7 +43,6 @@ import RollbackOutlined from '@ant-design/icons/RollbackOutlined';
 export default function Standing() {
     const dispatch = useDispatch();
     const state = useSelector((state) => state.standings)
-    console.log(state);
     const [isSmallScreen, setIsSmallScreen] = useState(window.innerWidth < 800);
     const [data, setData] = useState( state );
     const [east, setEast] = useState([]);
@@ -55,8 +54,6 @@ export default function Standing() {
     var start_date = "2024-04-04";
     //end date = start_date + 10days
     var end_date = moment(start_date).add(10, 'days').format('YYYY-MM-DD');
-    console.log("start_date",start_date);
-    console.log("end_date",end_date);
     const APIkey= "cda42657-3f79-4c68-b698-755f3ed5e718";
     const url = "https://api.balldontlie.io/v1/games";
 
@@ -191,7 +188,6 @@ export default function Standing() {
     const showWest = () => {
         setIsEast(false);
         setIsWest(true);
-        console.log(data);
     };
     const goBack = () => {
         navigate("/games");
