@@ -8,8 +8,34 @@ import Stats from '../../pages/Stats/Stats';
 import TeamDetail from '../../pages/TeamDetail/TeamDetail'
 import Game from "../../pages/games/Games"
 import Standing from '../../pages/standing/Standing';
+import Content from '../FeedbackContent/Content';
+import FeedbackHeader from '../FeedbackContent/FeedbackHeader';
+import Satisfaction from '../FeedbackContent/Satisfaction';
 
 export default function Main(props) {
+  const [satisfaction, setSatisfaction] = useState(100);
+  const [myFeedback, setMyFeedback] = useState([{name:'Peter',email:'lei23lei@gmail.com',satisfaction:100,'feedback':'That is the NBA website I have been looking for!'}]);
+  const {feedback} = props;
+  useEffect(() => {
+      if(!feedback) return;
+  
+      // push feedback to myFeedback
+      const updatedFeedback = [...myFeedback, feedback];
+      setMyFeedback(updatedFeedback);
+  
+      // calculate the average satisfaction and round it into two decimal places
+      // let sum = 0;
+      // updatedFeedback.forEach(e => {
+      //     sum += e.satisfaction;
+      // });
+      // setSatisfaction(sum/updatedFeedback.length);
+      let sum = updatedFeedback.reduce((acc, curr) => acc + curr.satisfaction, 0);
+      setSatisfaction((sum/updatedFeedback.length).toFixed(2));
+      
+  }, [feedback]);
+
+
+
   const {game} = props;
   const {setGame} = props;
   const {isHide} = props;
@@ -67,7 +93,14 @@ export default function Main(props) {
                 <Route path="/stats" element={<Stats/>} />
                 <Route path="/teams" element={<Teams />} />
                 <Route path="/teams/:id" element={<TeamDetail />} />
-                <Route path="/feedback" element={<Feedback feedback={props.feedback} />} />
+                <Route path="/feedback" element={
+                  <Feedback>
+                      <FeedbackHeader />
+                      <Satisfaction satisfaction={satisfaction}/>
+                      <Content myFeedback={myFeedback}/>
+                  </Feedback>
+                }/>
+                
                 <Route path="/*" element={<Game isHide={isHide} />} />
             </Routes>
         </div>
