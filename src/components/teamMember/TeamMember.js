@@ -6,6 +6,7 @@ import RollbackOutlined from '@ant-design/icons/RollbackOutlined';
 
 import Table from 'react-bootstrap/Table';
 import axios from 'axios';
+
 export default function TeamMember(props) {
     const [player, setPlayer] = useState([]);
     // const {setLoading} = props;
