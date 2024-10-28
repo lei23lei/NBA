@@ -14,8 +14,8 @@ const url = "https://api.balldontlie.io/v1/games"
 export default function Games(props) {
     const {isHide} = props;
     const [size, setSize] = useState(window.innerWidth < 550 ? "small" : "default");
-    // const [date, setDate] = useState(moment().format('YYYY-MM-DD'));
-    const [date,setDate] = useState('2024-04-09')
+    const [date, setDate] = useState(moment().format('YYYY-MM-DD'));
+    // const [date,setDate] = useState('2024-04-09')
     const [isLoading, setIsLoading] = useState(true);
     const [days, setDays] = useState(moment(date,"YYYY-MM-DD").daysInMonth());
     const [matches, setMatches] = useState([]);
